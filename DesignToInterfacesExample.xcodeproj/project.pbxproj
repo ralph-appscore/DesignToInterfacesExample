@@ -14,6 +14,11 @@
 		F7BF58221AE0C7CC00BFA639 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BF58211AE0C7CC00BFA639 /* Images.xcassets */; };
 		F7BF58251AE0C7CC00BFA639 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7BF58231AE0C7CC00BFA639 /* LaunchScreen.xib */; };
 		F7BF58311AE0C7CC00BFA639 /* DesignToInterfacesExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BF58301AE0C7CC00BFA639 /* DesignToInterfacesExampleTests.m */; };
+		F7BF58431AE0C8F300BFA639 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BF58421AE0C8F300BFA639 /* UserModel.m */; };
+		F7BF58461AE0C97600BFA639 /* MockUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BF58451AE0C97600BFA639 /* MockUserService.m */; };
+		F7BF584A1AE0C9F500BFA639 /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BF58491AE0C9F500BFA639 /* UserDataManager.m */; };
+		F7BF584E1AE0CBAE00BFA639 /* LoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BF584D1AE0CBAE00BFA639 /* LoginInteractor.m */; };
+		F7BF58521AE0CC4100BFA639 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BF58511AE0CC4100BFA639 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,20 @@
 		F7BF582A1AE0C7CC00BFA639 /* DesignToInterfacesExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignToInterfacesExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BF582F1AE0C7CC00BFA639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7BF58301AE0C7CC00BFA639 /* DesignToInterfacesExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignToInterfacesExampleTests.m; sourceTree = "<group>"; };
+		F7BF583E1AE0C8A900BFA639 /* UserServiceInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserServiceInterface.h; path = ../UserServiceInterface.h; sourceTree = "<group>"; };
+		F7BF58411AE0C8F300BFA639 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		F7BF58421AE0C8F300BFA639 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		F7BF58441AE0C97600BFA639 /* MockUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockUserService.h; sourceTree = "<group>"; };
+		F7BF58451AE0C97600BFA639 /* MockUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockUserService.m; sourceTree = "<group>"; };
+		F7BF58481AE0C9F500BFA639 /* UserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManager.h; sourceTree = "<group>"; };
+		F7BF58491AE0C9F500BFA639 /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
+		F7BF584B1AE0CA0B00BFA639 /* UserDataManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManagerProtocol.h; sourceTree = "<group>"; };
+		F7BF584C1AE0CBAE00BFA639 /* LoginInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInteractor.h; sourceTree = "<group>"; };
+		F7BF584D1AE0CBAE00BFA639 /* LoginInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInteractor.m; sourceTree = "<group>"; };
+		F7BF584F1AE0CBC800BFA639 /* LoginInteractorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInteractorProtocol.h; sourceTree = "<group>"; };
+		F7BF58501AE0CC4100BFA639 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F7BF58511AE0CC4100BFA639 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		F7BF58531AE0CDB000BFA639 /* LoginViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +100,9 @@
 		F7BF58131AE0C7CC00BFA639 /* DesignToInterfacesExample */ = {
 			isa = PBXGroup;
 			children = (
+				F7BF583A1AE0C7DC00BFA639 /* Classes */,
 				F7BF58181AE0C7CC00BFA639 /* AppDelegate.h */,
 				F7BF58191AE0C7CC00BFA639 /* AppDelegate.m */,
-				F7BF581B1AE0C7CC00BFA639 /* ViewController.h */,
-				F7BF581C1AE0C7CC00BFA639 /* ViewController.m */,
 				F7BF581E1AE0C7CC00BFA639 /* Main.storyboard */,
 				F7BF58211AE0C7CC00BFA639 /* Images.xcassets */,
 				F7BF58231AE0C7CC00BFA639 /* LaunchScreen.xib */,
@@ -117,6 +135,69 @@
 				F7BF582F1AE0C7CC00BFA639 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7BF583A1AE0C7DC00BFA639 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7BF58471AE0C9E000BFA639 /* DataManagers */,
+				F7BF58401AE0C8DE00BFA639 /* Models */,
+				F7BF583F1AE0C8C500BFA639 /* Services */,
+				F7BF583B1AE0C7E700BFA639 /* Use Cases */,
+				F7BF58501AE0CC4100BFA639 /* Constants.h */,
+				F7BF58511AE0CC4100BFA639 /* Constants.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F7BF583B1AE0C7E700BFA639 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				F7BF583C1AE0C81300BFA639 /* Login */,
+			);
+			name = "Use Cases";
+			sourceTree = "<group>";
+		};
+		F7BF583C1AE0C81300BFA639 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F7BF581B1AE0C7CC00BFA639 /* ViewController.h */,
+				F7BF581C1AE0C7CC00BFA639 /* ViewController.m */,
+				F7BF584C1AE0CBAE00BFA639 /* LoginInteractor.h */,
+				F7BF584D1AE0CBAE00BFA639 /* LoginInteractor.m */,
+				F7BF584F1AE0CBC800BFA639 /* LoginInteractorProtocol.h */,
+				F7BF58531AE0CDB000BFA639 /* LoginViewProtocol.h */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F7BF583F1AE0C8C500BFA639 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F7BF583E1AE0C8A900BFA639 /* UserServiceInterface.h */,
+				F7BF58441AE0C97600BFA639 /* MockUserService.h */,
+				F7BF58451AE0C97600BFA639 /* MockUserService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F7BF58401AE0C8DE00BFA639 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7BF58411AE0C8F300BFA639 /* UserModel.h */,
+				F7BF58421AE0C8F300BFA639 /* UserModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F7BF58471AE0C9E000BFA639 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				F7BF58481AE0C9F500BFA639 /* UserDataManager.h */,
+				F7BF58491AE0C9F500BFA639 /* UserDataManager.m */,
+				F7BF584B1AE0CA0B00BFA639 /* UserDataManagerProtocol.h */,
+			);
+			name = DataManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BF584E1AE0CBAE00BFA639 /* LoginInteractor.m in Sources */,
+				F7BF584A1AE0C9F500BFA639 /* UserDataManager.m in Sources */,
 				F7BF581D1AE0C7CC00BFA639 /* ViewController.m in Sources */,
+				F7BF58521AE0CC4100BFA639 /* Constants.m in Sources */,
 				F7BF581A1AE0C7CC00BFA639 /* AppDelegate.m in Sources */,
+				F7BF58431AE0C8F300BFA639 /* UserModel.m in Sources */,
+				F7BF58461AE0C97600BFA639 /* MockUserService.m in Sources */,
 				F7BF58171AE0C7CC00BFA639 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
